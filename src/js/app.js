@@ -1,5 +1,5 @@
 export default class Popover {
-  constructor () {
+  constructor() {
     this.tooltipContainer = null;
     this.btn = null;
     this.arrow = null;
@@ -23,7 +23,7 @@ export default class Popover {
     this.tooltipContainer.classList.toggle('display_flex');
     this.tooltipContainer.style.top = `-${this.btn.offsetTop + this.btn.offsetHeight + this.btn.offsetHeight / 4}px`;
     this.tooltipContainer.style.left = `-${this.btn.offsetLeft - this.btn.offsetWidth / 2}px`;
-    this.arrow.style.left = `${this.btn.offsetWidth / 2 + this.arrow.offsetWidth / 2}px`
+    this.arrow.style.left = `${this.btn.offsetWidth / 2 + this.arrow.offsetWidth / 2}px`;
   }
 }
 
