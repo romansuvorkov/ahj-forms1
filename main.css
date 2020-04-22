@@ -1,0 +1,119 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: white;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: block;
+  width: 200px;
+  height: 50px;
+  background-color: #dc3545;
+  border-radius: 15px;
+}
+
+.btn:focus { 
+  outline: none; 
+}
+
+.tooltip_container {
+  flex-wrap: wrap;
+  position: absolute;
+  width: 250px;
+  border: 1px solid black;
+}
+
+.tooltip_header {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.tooltip_text {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.arrow {
+  bottom: calc((.5rem + 1px) * -1);
+  position: absolute;
+  display: block;
+  width: 1rem;
+  height: .5rem;
+  margin: 0 .3rem;
+}
+
+.arrow::before {
+  /* bottom: 0;
+  border-width: .5rem .5rem 0;
+  border-top-color: rgba(0,0,0,.25);
+  position: absolute;
+  display: block;
+  content: "";
+  border-color: transparent;
+  border-style: solid;
+  box-sizing: border-box; */
+  content: ''; 
+  position: absolute;
+  border: 10px solid transparent;
+  border-top: 10px solid black;
+  z-index: 2;
+}
+
+.arrow::after {
+  /* bottom: 1px;
+  border-width: .5rem .5rem 0;
+  border-top-color: #fff;
+  position: absolute;
+  display: block;
+  content: "";
+  border-color: transparent;
+  border-style: solid;
+  box-sizing: border-box; */
+  bottom: -11px;
+  content: ''; 
+  position: absolute;
+  border: 10px solid transparent;
+  /* border-top: 10px solid green; */
+  border-top: 10px solid white;
+  z-index: 2;
+}
+
+/* .block::before, .block::after {
+  content: ''; 
+  position: absolute;
+  left: 20px; bottom: -20px;
+  border: 10px solid transparent;
+  border-top: 10px solid green;
+ }
+ .block::after {
+  border-top: 10px solid white;
+  bottom: -19px; 
+ } */
+
+
+.display_flex {
+  display: flex;
+}
+
+.display_none {
+  display: none;
+}
+
+
+
